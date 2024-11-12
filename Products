@@ -1,0 +1,30 @@
+# Dictionary of products
+products = {
+    'product1': {
+        'name': 'Washing Machine',
+        'price': 999.99
+    },
+    'product2': {
+        'name': 'Smart TV',
+        'price': 499.99
+    },
+    'product3': {
+        'name': 'Tablet',
+        'price': 299.99
+    },
+    'product4': {
+        'name': 'Headphones',
+        'price': 149.99
+    },
+    'product5': {
+        'name': 'Smartwatch',
+        'price': 199.99
+    }
+}
+
+def display_products(product_dict):
+    print("Products:")
+    for key, details in product_dict.items():
+        print(f"{key}: Product Name: {details['name']}, Price: ${details['price']:.2f}")
+
+display_products(products)
